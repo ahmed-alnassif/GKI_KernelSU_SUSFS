@@ -156,7 +156,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.generate-matrix.outputs.matrix) }}
-    uses: ./.github/workflows/build.yml
+    uses: ./.github/actions/build-kernel
     with:
       version: ${{ matrix.version }}
       android_version: ${{ matrix.android_version }}

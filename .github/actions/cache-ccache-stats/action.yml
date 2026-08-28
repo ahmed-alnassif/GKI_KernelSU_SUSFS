@@ -21,7 +21,7 @@ runs:
         echo "===================="
 
         if ! command -v ccache >/dev/null 2>&1; then
-          echo "[!]  ccache not installed, skipping ccache stats"
+          echo "[!] ccache not installed, skipping ccache stats"
           echo "===================="
           exit 0
         fi

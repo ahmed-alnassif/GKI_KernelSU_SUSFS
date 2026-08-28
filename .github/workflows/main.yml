@@ -606,7 +606,7 @@ jobs:
       fail-fast: false
       matrix:
         root: ${{ fromJson(needs.resolve-sources.outputs.root_matrix) }}
-    uses: ./.github/workflows/prepare.yml
+    uses: ./.github/actions/prepare-kernel
     with:
       config_file: .github/config/android12-5.10.json
       feature_set: ${{ needs.resolve-sources.outputs.feature_set }}
@@ -634,7 +634,7 @@ jobs:
       fail-fast: false
       matrix:
         root: ${{ fromJson(needs.resolve-sources.outputs.root_matrix) }}
-    uses: ./.github/workflows/prepare.yml
+    uses: ./.github/actions/prepare-kernel
     with:
       config_file: .github/config/android13-5.10.json
       feature_set: ${{ needs.resolve-sources.outputs.feature_set }}
@@ -662,7 +662,7 @@ jobs:
       fail-fast: false
       matrix:
         root: ${{ fromJson(needs.resolve-sources.outputs.root_matrix) }}
-    uses: ./.github/workflows/prepare.yml
+    uses: ./.github/actions/prepare-kernel
     with:
       config_file: .github/config/android13-5.15.json
       feature_set: ${{ needs.resolve-sources.outputs.feature_set }}
@@ -690,7 +690,7 @@ jobs:
       fail-fast: false
       matrix:
         root: ${{ fromJson(needs.resolve-sources.outputs.root_matrix) }}
-    uses: ./.github/workflows/prepare.yml
+    uses: ./.github/actions/prepare-kernel
     with:
       config_file: .github/config/android14-5.15.json
       feature_set: ${{ needs.resolve-sources.outputs.feature_set }}
@@ -718,7 +718,7 @@ jobs:
       fail-fast: false
       matrix:
         root: ${{ fromJson(needs.resolve-sources.outputs.root_matrix) }}
-    uses: ./.github/workflows/prepare.yml
+    uses: ./.github/actions/prepare-kernel
     with:
       config_file: .github/config/android14-6.1.json
       feature_set: ${{ needs.resolve-sources.outputs.feature_set }}
@@ -746,7 +746,7 @@ jobs:
       fail-fast: false
       matrix:
         root: ${{ fromJson(needs.resolve-sources.outputs.root_matrix) }}
-    uses: ./.github/workflows/prepare.yml
+    uses: ./.github/actions/prepare-kernel
     with:
       config_file: .github/config/android15-6.6.json
       feature_set: ${{ needs.resolve-sources.outputs.feature_set }}
@@ -774,7 +774,7 @@ jobs:
       fail-fast: false
       matrix:
         root: ${{ fromJson(needs.resolve-sources.outputs.root_matrix) }}
-    uses: ./.github/workflows/prepare.yml
+    uses: ./.github/actions/prepare-kernel
     with:
       config_file: .github/config/android16-6.12.json
       feature_set: ${{ needs.resolve-sources.outputs.feature_set }}
